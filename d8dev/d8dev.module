@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Hook functions to support the custom d8 module.
+ */
+
+ /**
+  * Implements hook_theme().
+  */
+function d8dev_theme() {
+  return [
+    'recipe_time_display' => [
+      'variables' => ['value' => NULL],
+      'template' => 'recipe-time-display',
+    ],
+  ];
+}
